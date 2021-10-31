@@ -27,8 +27,8 @@
 
 .learnings{
     display:flex;
-    /* min-height: 60vh; */
-    height:800px;
+    min-height: 60vh;
+    /* height:1200px; */
     align-items: center;
     justify-content:center;
     padding:30px 15px;
@@ -113,4 +113,20 @@
     background:var(--first-color);
     box-shadow: 1px 2px 6px 1px rgba(0,0,0,.2);
     transform: translateY(-2px)
+}
+@media (min-width: 1200px){
+    .learnings{
+        height: 800px;
+    }  
+}
+@media (max-width: 840px){
+    .learnings_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .learnings_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  
 }
