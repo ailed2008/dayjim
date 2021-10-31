@@ -19,6 +19,7 @@
 :root{
     --body-font:'Montserrat', sans-serif;
     --big-font-size:6.25rem;
+    --medium-font-size:3.15rem;
     --h2-font-size:1.25rem;
     --normal-font-size:.938rem;
     --small-font-size:.813rem;
@@ -117,7 +118,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    z-index: 1;
     background-color: var(--first-color);
 }
 /* NAV */
@@ -154,6 +155,10 @@ img{
 .nav_logo{
     color: var(--white-color);
 }
+.nav_logo img{
+    width:100px;
+    height:100px;
+}
 .nav_toggle{
     color: var(--white-color);
     font-size: 1.5rem;
@@ -187,12 +192,13 @@ img{
 }
 .home_title{
     align-self:flex-end;
-    font-size: var(--big-font-size);
+    font-size: var(--medium-font-size);
     color: var(--white-color);
     line-height: .8;
 }
 .home_title span{
     text-shadow:0 20px 25px rgba(0,0,0,0.5);
+    margin-bottom: 400px;
 }
 .home_scroll{
     align-self: flex-end;
@@ -330,17 +336,18 @@ img{
 }
 .contact_inputs{
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    /* grid-template-columns: repeat(2 1fr); */
     column-gap: 1rem;
 }
 .contact_input{
     width: 100%;
     padding: .8rem;
     outline: none;
-    border: 1.5px solid var(--dark-color);
+    border: 3.5px solid var(--first-color);
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
+    /* border-style:dotted; */
 }
 
 .contact_button{
@@ -354,6 +361,9 @@ img{
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
+}
+.contact-img{
+   margin-left: 600px;
 }
 
 /* FOOTER */
@@ -431,7 +441,8 @@ color: var(--first-color);
         row-gap:0;
     }
     .home_img{
-        width: 524px;
+        /* width: 524px; */
+        width: 324px;
         right: 10%;   
     }
     .about_container{
@@ -458,11 +469,14 @@ color: var(--first-color);
         column-gap: 2rem;
     }
     .contact_container{
-        grid-template-columns: repeat(2,1fr);
+        /* grid-template-columns: repeat(2,1fr); */
         justify-items: center;
     }
     .contact_form{
         width: 480px;
+    }
+    .contact_inputs{
+        width: 780px;
     }
     .footer_container{
         grid-template-columns: repeat(3,1fr);
@@ -494,4 +508,10 @@ color: var(--first-color);
         width: 580px;
         margin: 0 99px 99px;
     }
+    .contact_inputs{
+        width: 880px;
+        padding-left: 280px;
+        /* margin-left: auto; */
+    }
+
 }

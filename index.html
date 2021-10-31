@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Portafolio Dayana Jiménez</title>
+    <title>Portfolio Dayana Jiménez</title>
+    <meta name="description" content="Portfolio Dayana Jiménez. Web developer">
+    <meta name="keywords" content="web developer">
+
 </head>
 
 <body>
     <header class="header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav_logo">Dayana Jiménez</a>
+                 <!-- <a href="#" class="nav_logo">Dayana Jiménez</a> -->
+                 <a href="index.html" class="nav_logo"><img src="img/Logo-DayJim.png" alt="dayana jimenez"></a>
             </div>
-
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
@@ -24,6 +26,7 @@
                     <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
                     <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
                     <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                    <li class="nav_item"><a href="blog.html" class="nav_link">Go to my blog</a></li>
                 </ul>
             </div>
 
@@ -38,12 +41,14 @@
         <section class="home" id="home">
             <div class="home_container bd-grid">
                 <h1 class="home_title">
-                    <span>HE</span><br>LLO.
+                    <span>Hello!</span><br>
+                    <span>I'm Dayana Jiménez</span><br>
+                    <span>I'm web developer<br></span>
                 </h1>
                 <div class="home_scroll">
                     <a href="#about" class="home_scroll-link"><i class="bx bx-up-arrow-a"></i>Scroll down</a>
                 </div>
-                <img src="img/dayana.png" alt="" class="home_img" id="myPhoto">
+                <img src="img/dayjim.png" alt="" class="home_img" id="myPhoto">
             </div>
         </section>
 
@@ -127,20 +132,21 @@
         <!-- CONTACT -->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
-
             <div class="contact_container bd-grid">
                 <div class="contact_info">
-                    <h3 class="contact_subtitle">Email</h3>
-
+                    <h3>Thanks for taking the time to reach out. 
+                        How can I help you today?
+                    </h3>
                 </div>
             </div>
             <form action="enviar.php" method="POST" class="contact_form">
                 <div class="contact_inputs">
                     <input type="text" name="name" placeholder="Name" class="contact_input">
                     <input type="email" name="mail" placeholder="Email" class="contact_input">
+                    <textarea type="text" name="message" placeholder="Message" id="" cols="0" rows="10" class="contact_input"></textarea>
                 </div>
-                <textarea name="message" id="" cols="0" rows="10" class="contact_input"></textarea>
                 <input type="submit" value="Enviar" class="contact_button">
+
             </form>
         </section>
     </main>
@@ -172,7 +178,7 @@
             </div>
         </div>
         <div class="derechos">
-            <span class="footer_title">Dayana Jiménez 2021 Todos los derechos reservados</span>
+            <span class="footer_title">All rights reserved © 2021 Dayana Jiménez</span>
         </div>
     </footer>
 
@@ -180,7 +186,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN JS -->
     <script src="js/index.js"></script>
-
 </body>
 
 </html>
