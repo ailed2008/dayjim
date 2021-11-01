@@ -16,17 +16,17 @@
         <nav class="nav bd-grid">
             <div>
                 <!-- <a href="#" class="nav_logo">Dayana Jiménez</a> -->
-                <a href="index.html" class="nav_logo"><img src="img/Logo-DayJim.png" alt="dayana jimenez"></a>
+                <a href="index.html" class="nav_logo"><img src="../img/Logo-DayJim.png" alt="dayana jimenez"></a>
             </div>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="blog.html" class="nav_link active">Home</a></li>
+                    <!-- <li class="nav_item"><a href="blog.html" class="nav_link active">Home</a></li> -->
                     <!-- <li class="nav_item"><a href="#about" class="nav_link">About</a></li> -->
                     <!-- <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li> -->
                     <!-- <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li> -->
                     <!-- <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li> -->
                     <!-- <li class="nav_item"><a href="#contact" class="nav_link">Blog</a></li> -->
-                    <li class="nav_item"><a href="#learnings" class="nav_link">Learnings</a></li>
+                    <li class="nav_item"><a href="../blog.html" class="nav_link">Learnings</a></li>
                     <!-- <li class="nav_item"><a href="#portfolio" class="nav_link">Opinions</a></li> -->
                     <li class="nav_item"><a href="index.html" class="nav_link">Return to my portfolio</a></li>
                 </ul>
@@ -39,23 +39,33 @@
     </header>
 
     <main class="main">
-        <section class="learnings section" id="learnings">
-            <div class="learnings_container bd-grid">
-                <article class="post">
-                    <div class="post-header">
-                        <div class="post-img">
-                            <!-- <img src="img/playa.jpg" alt=""> -->
-                        </div>
+        <section class="post section" id="learnings">
+            <div class="post_container bd-grid">
+                <div class="post-header">
+                    <div class="post-img">
+                        <!-- <img src="img/playa.jpg" alt=""> -->
                     </div>
-                    <div class="post-body">
-                        <span>30 October, 2021 | Diseño web</span>
-                        <h2>Tips for learning to program from scratch</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore eos cupiditate reiciendis
-                            dolor nulla nostrum ducimus ratione quo, sint placeat eveniet quidem consectetur quibusdam
-                            perspiciatis numquam minima qui cumque est.</p>
-                        <a href="blog/post1.html" class="post-link">Leer más...</a>
-                    </div>
-                </article>
+                </div>
+                <div class="post-body">
+                    <span>30 October, 2021 | Programming</span>
+                    <h2>Tips for learning to program from scratch</h2>
+                    <p> I remember when I started to programming it was very difficult
+                        because I don't understand how to do it. Now after practicing and
+                        practicing, I understand more and can make my own websites.
+                    </p>
+                    <p> My first tip is to start now, because start now, 
+                        practice now, If you leave it for later it is wasted time, 
+                        you need to practice now, programming now.
+                    </p>
+                    <p> My second tip is you start with PHP because your learning curve is easy.
+                    </p>
+                    <p> My third tip is if you don't understand something, read again, watch a video on youtube 
+                        about it, google it but don't stop until you get it.
+                    </p>
+                    
+
+                </div>
+
             </div>
         </section>
     </main>
@@ -70,11 +80,9 @@
             <div class="footer_data">
                 <h2 class="footer_title">EXPLORE</h2>
                 <ul>
-                    <li><a href="#home" class="footer_link">Home</a></li>
-                    <li><a href="#about" class="footer_link">About</a></li>
-                    <li><a href="#skills" class="footer_link">Skills</a></li>
-                    <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
-                    <li><a href="#contact" class="footer_link">Contact</a></li>
+                    <li class="nav_item"><a href="../blog.html" class="nav_link">Learnings</a></li>
+                    <!-- <li class="nav_item"><a href="#portfolio" class="nav_link">Opinions</a></li> -->
+                    <li class="nav_item"><a href="../index.html" class="nav_link">Return to my portfolio</a></li>
                 </ul>
             </div>
             <div class="footer_data">
@@ -95,6 +103,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN JS -->
     <script src="../js/index.js"></script>
+    <script src="../js/blog.js"></script>
 </body>
 
 </html>
